@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+	<title>Paint</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="toolbar">
+			<a id="open" onclick="OpenImage()" href="#" class="selected"><img src="assets/open-icon.png"></a>
+			<a id="save" onclick="SaveImage()" href="#"><img src="assets/save-icon.png"></a>
+			<a id="brush" onclick="ChangeTool('brush')" href="#"><img src="assets/brush-icon.png"></a>
+			<a id="line" onclick="ChangeTool('line')" href="#"><img src="assets/line-icon.png"></a>
+			<a id="rectangle" onclick="ChangeTool('rectangle')" href="#"><img src="assets/rectangle-icon.png"></a>
+			<a id="circle" onclick="ChangeTool('circle')" href="#"><img src="assets/circle-icon.png"></a>
+			<a id="ellipse" onclick="ChangeTool('ellipse')" href="#"><img src="assets/ellipse-icon.png"></a>
+			<a id="polygon" onclick="ChangeTool('polygon')" href="#"><img src="assets/polygon-icon.png"></a>
+		</div><br>
+		<canvas id="my-canvas" width="600" height="600"></canvas>
+		<div id="img-data-div">
+			<a href="#" id="img-data-file" download="image.png">Download Image</a>
+		</div>
+
+	</div>
+</body>
+</html>
